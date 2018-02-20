@@ -1,4 +1,4 @@
-// ConsoleApplication1.cpp : Defines the entry point for the console application.
+// CharacterCounting.cpp : Defines the entry point for the console application.
 //
 
 #include "stdafx.h"
@@ -20,7 +20,7 @@ int main(int argc, char* args[])
 		cout << "Reading from file!" << endl;
 
 		ifstream ifile;
-		//args[1]
+		//"Input.txt"
 		ifile.open(args[1]);
 		//checking to see if the fule can be opened
 		if (!ifile.is_open())
@@ -46,8 +46,14 @@ int main(int argc, char* args[])
 		//closing the input file
 		ifile.close();
 
+		cout << "File read!" << endl;
+
 		ofstream ofile;
-		//args[2]
+		
+
+		cout << "Opening output file!" << endl;
+
+		//"output.txt"
 		ofile.open(args[2]);
 		if (!ofile.is_open())
 		{
@@ -56,6 +62,9 @@ int main(int argc, char* args[])
 			return -1;
 		}
 		//writing to file
+
+		cout << "Writing to output file!" << endl;
+
 		for (int i = 0; i < (sizeof(cf) / sizeof(cf[0])); i++)
 		{
 			//only print the characters that where in the file
@@ -65,7 +74,8 @@ int main(int argc, char* args[])
 
 		ofile.close();
 
+		cout << "File written!" << endl;
+
 	}
 	return 0;
 }
-

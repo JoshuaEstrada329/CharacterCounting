@@ -16,10 +16,8 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
-    <Text Include="Text.txt" />
-    <Text Include="output.txt">
-      <Filter>Source Files</Filter>
-    </Text>
+    <Text Include="Input.txt" />
+    <Text Include="output.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -36,10 +34,10 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CharacterFrequency.cpp">
+    <ClCompile Include="CharacterCounting.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ConsoleApplication1.cpp">
+    <ClCompile Include="CharacterFrequency.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

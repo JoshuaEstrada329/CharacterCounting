@@ -50,4 +50,3 @@ ostream& operator<<(ostream& os, const CharacterFrequency& cf)
 	os << cf.character << " (" << (int)cf.character << ") " << cf.frequency;
 	return os;
 }
-

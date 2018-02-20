@@ -7,7 +7,7 @@ private:
 	char character;
 	int frequency;
 
-public:	
+public:
 
 	CharacterFrequency();
 	CharacterFrequency(char);
@@ -22,7 +22,5 @@ public:
 
 	//operator overloading
 	friend ostream& operator<<(ostream& os, const CharacterFrequency& cf);
-	//friend bool operator==(const CharacterFrequency& cfl, const CharacterFrequency& cfr);
-	//friend bool operator!=(const CharacterFrequency& cf, const int& number);
 };
 
